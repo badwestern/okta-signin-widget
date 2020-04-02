@@ -1,5 +1,5 @@
 const templateHelper = require('../../../config/templateHelper');
-const identify = require('./data/identify');
+const identify = require('./data/identify-with-no-sso-extension');
 
 module.exports = templateHelper({
   path: '/idp/idx/authenticators/sso_extension/transactions/:transactionId/verify',

@@ -131,12 +131,9 @@ const appleCredentialSsoExtension = {
   '/idp/idx/introspect': [
     'identify-with-apple-credential-sso-extension',
   ],
-  '/idp/idx/authenticators/sso_extension/transactions/123/verify': [
-    'identify'
-  ],
-  '/idp/idx': [
-    'error-email-verify',
-  ],
+  '/idp/idx/authenticators/sso_extension/transactions/456/verify/cancel': [
+    'identify-with-apple-sso-extension-fallback',
+  ]
 };
 
 const appleSSOExtensionFallback = {
@@ -155,5 +152,5 @@ const appleSSOExtensionFallback = {
 };
 
 module.exports = {
-  mocks: idx,
+  mocks: authn,
 };
